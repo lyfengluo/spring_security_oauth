@@ -1,0 +1,15 @@
+server:
+  port: 53000
+
+spring:
+  application:
+    name: security_eureka_server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: localhost
