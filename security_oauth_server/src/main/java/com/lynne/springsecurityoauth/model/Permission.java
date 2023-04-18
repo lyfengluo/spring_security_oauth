@@ -1,6 +1,8 @@
 package com.lynne.springsecurityoauth.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Description //TODO
@@ -8,6 +10,8 @@ import lombok.Data;
  * @Author fengyongli
  **/
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Permission {
     private String id;
     private String code;

@@ -26,7 +26,7 @@ import java.util.Map;
 public class AuthFilter extends ZuulFilter {
     @Override
     public String filterType() {
-            return "pre";
+            return "pre";//如果是null会报错
     }
 
     @Override
@@ -36,7 +36,7 @@ public class AuthFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
-        return true;
+        return true;//如果是false 不会执行下面的run()
     }
 
     @Override
